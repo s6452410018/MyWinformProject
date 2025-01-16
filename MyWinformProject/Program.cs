@@ -16,7 +16,7 @@ namespace MyWinformProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCalculator());
+            Application.Run(new FrmLogin());
         }
     }
 }
