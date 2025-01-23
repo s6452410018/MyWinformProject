@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.dtpBirthDate = new System.Windows.Forms.DateTimePicker();
+            this.rdFemale = new System.Windows.Forms.RadioButton();
+            this.rdMale = new System.Windows.Forms.RadioButton();
+            this.lbShowResult = new System.Windows.Forms.Label();
+            this.btCancel = new System.Windows.Forms.Button();
+            this.btOk = new System.Windows.Forms.Button();
             this.btMainMenu = new System.Windows.Forms.Button();
             this.tslbUsername = new System.Windows.Forms.ToolStripLabel();
             this.tslbDateTime = new System.Windows.Forms.ToolStripLabel();
@@ -68,12 +68,12 @@
             this.label2.Text = "ชื่อ-สกุล";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox1
+            // tbName
             // 
-            this.textBox1.Location = new System.Drawing.Point(221, 100);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(296, 20);
-            this.textBox1.TabIndex = 5;
+            this.tbName.Location = new System.Drawing.Point(221, 100);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(296, 20);
+            this.tbName.TabIndex = 5;
             // 
             // label3
             // 
@@ -84,70 +84,72 @@
             this.label3.Text = "ว/ด/ป เกิด";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // dateTimePicker1
+            // dtpBirthDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(221, 136);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(195, 20);
-            this.dateTimePicker1.TabIndex = 7;
+            this.dtpBirthDate.Location = new System.Drawing.Point(221, 136);
+            this.dtpBirthDate.Name = "dtpBirthDate";
+            this.dtpBirthDate.Size = new System.Drawing.Size(195, 20);
+            this.dtpBirthDate.TabIndex = 7;
             // 
-            // radioButton2
+            // rdFemale
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(387, 182);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(46, 17);
-            this.radioButton2.TabIndex = 9;
-            this.radioButton2.Text = "หญิง";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdFemale.AutoSize = true;
+            this.rdFemale.Location = new System.Drawing.Point(387, 182);
+            this.rdFemale.Name = "rdFemale";
+            this.rdFemale.Size = new System.Drawing.Size(46, 17);
+            this.rdFemale.TabIndex = 9;
+            this.rdFemale.Text = "หญิง";
+            this.rdFemale.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdMale
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(262, 182);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(44, 17);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "ชาย";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdMale.AutoSize = true;
+            this.rdMale.Checked = true;
+            this.rdMale.Location = new System.Drawing.Point(262, 182);
+            this.rdMale.Name = "rdMale";
+            this.rdMale.Size = new System.Drawing.Size(44, 17);
+            this.rdMale.TabIndex = 8;
+            this.rdMale.TabStop = true;
+            this.rdMale.Text = "ชาย";
+            this.rdMale.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // lbShowResult
             // 
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label4.Location = new System.Drawing.Point(12, 219);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(598, 147);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "?????";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbShowResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lbShowResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbShowResult.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lbShowResult.Location = new System.Drawing.Point(12, 219);
+            this.lbShowResult.Name = "lbShowResult";
+            this.lbShowResult.Size = new System.Drawing.Size(598, 147);
+            this.lbShowResult.TabIndex = 10;
+            this.lbShowResult.Text = "Welcome";
+            this.lbShowResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button3
+            // btCancel
             // 
-            this.button3.Image = global::MyWinformProject.Properties.Resources.cancel1;
-            this.button3.Location = new System.Drawing.Point(640, 303);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(148, 63);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "ยกเลิก";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btCancel.Image = global::MyWinformProject.Properties.Resources.cancel1;
+            this.btCancel.Location = new System.Drawing.Point(640, 303);
+            this.btCancel.Name = "btCancel";
+            this.btCancel.Size = new System.Drawing.Size(148, 63);
+            this.btCancel.TabIndex = 12;
+            this.btCancel.Text = "ยกเลิก";
+            this.btCancel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btCancel.UseVisualStyleBackColor = true;
+            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
-            // button2
+            // btOk
             // 
-            this.button2.Image = global::MyWinformProject.Properties.Resources.ok;
-            this.button2.Location = new System.Drawing.Point(640, 219);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 63);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "ตกลง";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btOk.Image = global::MyWinformProject.Properties.Resources.ok;
+            this.btOk.Location = new System.Drawing.Point(640, 219);
+            this.btOk.Name = "btOk";
+            this.btOk.Size = new System.Drawing.Size(148, 63);
+            this.btOk.TabIndex = 11;
+            this.btOk.Text = "ตกลง";
+            this.btOk.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btOk.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btOk.UseVisualStyleBackColor = true;
+            this.btOk.Click += new System.EventHandler(this.btOk_Click);
             // 
             // btMainMenu
             // 
@@ -198,14 +200,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.btCancel);
+            this.Controls.Add(this.btOk);
+            this.Controls.Add(this.lbShowResult);
+            this.Controls.Add(this.rdFemale);
+            this.Controls.Add(this.rdMale);
+            this.Controls.Add(this.dtpBirthDate);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btMainMenu);
             this.Controls.Add(this.label1);
@@ -224,14 +226,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btMainMenu;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DateTimePicker dtpBirthDate;
+        private System.Windows.Forms.RadioButton rdFemale;
+        private System.Windows.Forms.RadioButton rdMale;
+        private System.Windows.Forms.Label lbShowResult;
+        private System.Windows.Forms.Button btOk;
+        private System.Windows.Forms.Button btCancel;
         private System.Windows.Forms.ToolStripLabel tslbUsername;
         private System.Windows.Forms.ToolStripLabel tslbDateTime;
         private System.Windows.Forms.ToolStrip toolStrip1;

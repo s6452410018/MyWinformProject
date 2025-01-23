@@ -36,5 +36,45 @@ namespace MyWinformProject
             tslbUsername.Text = ShareData.loginName + " (" + ShareData.loginType + ")";
             timer1.Start();
         }
+
+        private void btOk_Click(object sender, EventArgs e)
+        {
+            //Validate
+            if (tbName.Text.Trim().Length == 0)
+            {
+                ShareData.showWarningMSG("ป้อนชื่อด้วย...");
+            }
+            else if (dtpBirthDate.Value.Year >= DateTime.Now.Year)
+            {
+                ShareData.showWarningMSG("ปีเกิดต้องน้อยกว่าวันปัจจุบัน...");
+            }
+            else
+            {
+                //นำข้อมูลไปแสดงผล โดนคำนวณอายุด้วย แล้ววันเดือนปีเกิดต้องแสดงเป็นวันที่ไทย
+                int age = DateTime.Now.Year -dtpBirthDate.Value.Year;
+
+                string birthDate = dtpBirthDate.Value.ToString("วันที่ d เดือน MMMM พ.ศ.yyyy", new CultureInfo("th-TH"));
+
+                string gender = rdMale.Checked == true ? "ชาย" : "หญืง";
+
+                string datashow = "ชื่อ : " + tbName.Text + "\n" +
+                                  "วันเกิด : " + birthDate + "\n" +
+                                  "อายุ : " + age + " ปี\n" +
+                                  "เพศ : " + gender;
+
+                lbShowResult.Text = datashow;
+            }
+        }
+
+        private void btCancel_Click(object sender, EventArgs e)
+        {
+            // Clear UI
+            tbName.Clear();
+            dtpBirthDate.Value = DateTime.Now;
+            rdFemale.Checked = true;
+
+            lbShowResult.Text = "Welcome";
+            tbName.Focus();
+        }
     }
 }
