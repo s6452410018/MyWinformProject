@@ -30,34 +30,34 @@
         {
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.btMainMenu = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tslbUsername = new System.Windows.Forms.ToolStripLabel();
             this.tslbDateTime = new System.Windows.Forms.ToolStripLabel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
+            this.rdClose = new System.Windows.Forms.RadioButton();
+            this.rdOpen = new System.Windows.Forms.RadioButton();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btLotto2Bottom = new System.Windows.Forms.Button();
+            this.lbLotto2Bottom = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lbLotto3Bottom02 = new System.Windows.Forms.Label();
+            this.btLotto3Bottom = new System.Windows.Forms.Button();
+            this.lbLotto3Bottom01 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lbLotto3Top02 = new System.Windows.Forms.Label();
+            this.btLotto3Top = new System.Windows.Forms.Button();
+            this.lbLotto3Top01 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btLotto1 = new System.Windows.Forms.Button();
+            this.lbLotto1 = new System.Windows.Forms.Label();
+            this.dtpLotto = new System.Windows.Forms.DateTimePicker();
+            this.label23 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -72,55 +72,6 @@
             this.label1.Text = "LOTTO หวยออนไลน์";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label23
-            // 
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(289, 105);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(93, 23);
-            this.label23.TabIndex = 53;
-            this.label23.Text = "ประจำงวดวันที่";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(401, 108);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 54;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(148, 150);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(419, 78);
-            this.groupBox1.TabIndex = 55;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "รางวัลที่ 1 ";
-            // 
-            // button1
-            // 
-            this.button1.Image = global::MyWinformProject.Properties.Resources.start2;
-            this.button1.Location = new System.Drawing.Point(277, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 47);
-            this.button1.TabIndex = 23;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(124, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 48);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "??????";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // btMainMenu
             // 
             this.btMainMenu.Image = global::MyWinformProject.Properties.Resources.pevious1;
@@ -133,126 +84,6 @@
             this.btMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btMainMenu.UseVisualStyleBackColor = true;
             this.btMainMenu.Click += new System.EventHandler(this.btMainMenu_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(32, 247);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(289, 137);
-            this.groupBox2.TabIndex = 56;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "รางวัล 3 ตัวบน";
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(50, 74);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 48);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "???";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button2
-            // 
-            this.button2.Image = global::MyWinformProject.Properties.Resources.start2;
-            this.button2.Location = new System.Drawing.Point(200, 46);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(50, 47);
-            this.button2.TabIndex = 23;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(50, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(144, 48);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "???";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.button5);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(371, 247);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(289, 137);
-            this.groupBox3.TabIndex = 57;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "รางวัล 3 ตัวล่าง";
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(50, 74);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(134, 48);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "???";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button5
-            // 
-            this.button5.Image = global::MyWinformProject.Properties.Resources.start2;
-            this.button5.Location = new System.Drawing.Point(190, 46);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(50, 47);
-            this.button5.TabIndex = 23;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(50, 21);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(134, 48);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "???";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.button3);
-            this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(148, 410);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(275, 78);
-            this.groupBox4.TabIndex = 56;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "รางวัลเลขท้าย 2 ตัวล่าง";
-            // 
-            // button3
-            // 
-            this.button3.Image = global::MyWinformProject.Properties.Resources.start2;
-            this.button3.Location = new System.Drawing.Point(170, 20);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(50, 47);
-            this.button3.TabIndex = 23;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(20, 19);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(144, 48);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "??";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // toolStrip1
             // 
@@ -280,32 +111,211 @@
             this.tslbDateTime.Size = new System.Drawing.Size(59, 22);
             this.tslbDateTime.Text = "datetime?";
             // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(468, 420);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(109, 17);
-            this.radioButton1.TabIndex = 59;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "เปิดการออกรางวัล";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Checked = true;
-            this.radioButton2.Location = new System.Drawing.Point(468, 460);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(104, 17);
-            this.radioButton2.TabIndex = 60;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "ปิดการออกรางวัล";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // rdClose
+            // 
+            this.rdClose.AutoSize = true;
+            this.rdClose.Checked = true;
+            this.rdClose.Location = new System.Drawing.Point(476, 452);
+            this.rdClose.Name = "rdClose";
+            this.rdClose.Size = new System.Drawing.Size(104, 17);
+            this.rdClose.TabIndex = 68;
+            this.rdClose.TabStop = true;
+            this.rdClose.Text = "ปิดการออกรางวัล";
+            this.rdClose.UseVisualStyleBackColor = true;
+            this.rdClose.Click += new System.EventHandler(this.rdClose_Click);
+            // 
+            // rdOpen
+            // 
+            this.rdOpen.AutoSize = true;
+            this.rdOpen.Location = new System.Drawing.Point(476, 412);
+            this.rdOpen.Name = "rdOpen";
+            this.rdOpen.Size = new System.Drawing.Size(109, 17);
+            this.rdOpen.TabIndex = 67;
+            this.rdOpen.TabStop = true;
+            this.rdOpen.Text = "เปิดการออกรางวัล";
+            this.rdOpen.UseVisualStyleBackColor = true;
+            this.rdOpen.Click += new System.EventHandler(this.rdOpen_Click);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.btLotto2Bottom);
+            this.groupBox4.Controls.Add(this.lbLotto2Bottom);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(156, 402);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(275, 78);
+            this.groupBox4.TabIndex = 64;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "รางวัลเลขท้าย 2 ตัวล่าง";
+            // 
+            // btLotto2Bottom
+            // 
+            this.btLotto2Bottom.Enabled = false;
+            this.btLotto2Bottom.Image = global::MyWinformProject.Properties.Resources.start2;
+            this.btLotto2Bottom.Location = new System.Drawing.Point(170, 20);
+            this.btLotto2Bottom.Name = "btLotto2Bottom";
+            this.btLotto2Bottom.Size = new System.Drawing.Size(50, 47);
+            this.btLotto2Bottom.TabIndex = 23;
+            this.btLotto2Bottom.UseVisualStyleBackColor = true;
+            this.btLotto2Bottom.Click += new System.EventHandler(this.btLotto2Bottom_Click);
+            // 
+            // lbLotto2Bottom
+            // 
+            this.lbLotto2Bottom.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLotto2Bottom.ForeColor = System.Drawing.Color.Red;
+            this.lbLotto2Bottom.Location = new System.Drawing.Point(20, 19);
+            this.lbLotto2Bottom.Name = "lbLotto2Bottom";
+            this.lbLotto2Bottom.Size = new System.Drawing.Size(144, 48);
+            this.lbLotto2Bottom.TabIndex = 22;
+            this.lbLotto2Bottom.Text = "??";
+            this.lbLotto2Bottom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.lbLotto3Bottom02);
+            this.groupBox3.Controls.Add(this.btLotto3Bottom);
+            this.groupBox3.Controls.Add(this.lbLotto3Bottom01);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(379, 239);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(289, 137);
+            this.groupBox3.TabIndex = 66;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "รางวัล 3 ตัวล่าง";
+            // 
+            // lbLotto3Bottom02
+            // 
+            this.lbLotto3Bottom02.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLotto3Bottom02.ForeColor = System.Drawing.Color.Red;
+            this.lbLotto3Bottom02.Location = new System.Drawing.Point(50, 74);
+            this.lbLotto3Bottom02.Name = "lbLotto3Bottom02";
+            this.lbLotto3Bottom02.Size = new System.Drawing.Size(134, 48);
+            this.lbLotto3Bottom02.TabIndex = 24;
+            this.lbLotto3Bottom02.Text = "???";
+            this.lbLotto3Bottom02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btLotto3Bottom
+            // 
+            this.btLotto3Bottom.Enabled = false;
+            this.btLotto3Bottom.Image = global::MyWinformProject.Properties.Resources.start2;
+            this.btLotto3Bottom.Location = new System.Drawing.Point(190, 46);
+            this.btLotto3Bottom.Name = "btLotto3Bottom";
+            this.btLotto3Bottom.Size = new System.Drawing.Size(50, 47);
+            this.btLotto3Bottom.TabIndex = 23;
+            this.btLotto3Bottom.UseVisualStyleBackColor = true;
+            this.btLotto3Bottom.Click += new System.EventHandler(this.btLotto3Bottom_Click);
+            // 
+            // lbLotto3Bottom01
+            // 
+            this.lbLotto3Bottom01.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLotto3Bottom01.ForeColor = System.Drawing.Color.Red;
+            this.lbLotto3Bottom01.Location = new System.Drawing.Point(50, 21);
+            this.lbLotto3Bottom01.Name = "lbLotto3Bottom01";
+            this.lbLotto3Bottom01.Size = new System.Drawing.Size(134, 48);
+            this.lbLotto3Bottom01.TabIndex = 22;
+            this.lbLotto3Bottom01.Text = "???";
+            this.lbLotto3Bottom01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.lbLotto3Top02);
+            this.groupBox2.Controls.Add(this.btLotto3Top);
+            this.groupBox2.Controls.Add(this.lbLotto3Top01);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(40, 239);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(289, 137);
+            this.groupBox2.TabIndex = 65;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "รางวัล 3 ตัวบน";
+            // 
+            // lbLotto3Top02
+            // 
+            this.lbLotto3Top02.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLotto3Top02.ForeColor = System.Drawing.Color.Red;
+            this.lbLotto3Top02.Location = new System.Drawing.Point(50, 74);
+            this.lbLotto3Top02.Name = "lbLotto3Top02";
+            this.lbLotto3Top02.Size = new System.Drawing.Size(144, 48);
+            this.lbLotto3Top02.TabIndex = 24;
+            this.lbLotto3Top02.Text = "???";
+            this.lbLotto3Top02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btLotto3Top
+            // 
+            this.btLotto3Top.Enabled = false;
+            this.btLotto3Top.Image = global::MyWinformProject.Properties.Resources.start2;
+            this.btLotto3Top.Location = new System.Drawing.Point(200, 46);
+            this.btLotto3Top.Name = "btLotto3Top";
+            this.btLotto3Top.Size = new System.Drawing.Size(50, 47);
+            this.btLotto3Top.TabIndex = 23;
+            this.btLotto3Top.UseVisualStyleBackColor = true;
+            this.btLotto3Top.Click += new System.EventHandler(this.btLotto3Top_Click);
+            // 
+            // lbLotto3Top01
+            // 
+            this.lbLotto3Top01.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLotto3Top01.ForeColor = System.Drawing.Color.Red;
+            this.lbLotto3Top01.Location = new System.Drawing.Point(50, 21);
+            this.lbLotto3Top01.Name = "lbLotto3Top01";
+            this.lbLotto3Top01.Size = new System.Drawing.Size(144, 48);
+            this.lbLotto3Top01.TabIndex = 22;
+            this.lbLotto3Top01.Text = "???";
+            this.lbLotto3Top01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btLotto1);
+            this.groupBox1.Controls.Add(this.lbLotto1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(156, 142);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(419, 78);
+            this.groupBox1.TabIndex = 63;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "รางวัลที่ 1 ";
+            // 
+            // btLotto1
+            // 
+            this.btLotto1.Enabled = false;
+            this.btLotto1.Image = global::MyWinformProject.Properties.Resources.start2;
+            this.btLotto1.Location = new System.Drawing.Point(277, 18);
+            this.btLotto1.Name = "btLotto1";
+            this.btLotto1.Size = new System.Drawing.Size(50, 47);
+            this.btLotto1.TabIndex = 23;
+            this.btLotto1.UseVisualStyleBackColor = true;
+            this.btLotto1.Click += new System.EventHandler(this.btLotto1_Click);
+            // 
+            // lbLotto1
+            // 
+            this.lbLotto1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLotto1.ForeColor = System.Drawing.Color.Red;
+            this.lbLotto1.Location = new System.Drawing.Point(124, 18);
+            this.lbLotto1.Name = "lbLotto1";
+            this.lbLotto1.Size = new System.Drawing.Size(144, 48);
+            this.lbLotto1.TabIndex = 22;
+            this.lbLotto1.Text = "??????";
+            this.lbLotto1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dtpLotto
+            // 
+            this.dtpLotto.Location = new System.Drawing.Point(409, 100);
+            this.dtpLotto.Name = "dtpLotto";
+            this.dtpLotto.Size = new System.Drawing.Size(200, 20);
+            this.dtpLotto.TabIndex = 62;
+            // 
+            // label23
+            // 
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(297, 97);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(93, 23);
+            this.label23.TabIndex = 61;
+            this.label23.Text = "ประจำงวดวันที่";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FrmLotto
             // 
@@ -313,15 +323,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 540);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.rdClose);
+            this.Controls.Add(this.rdOpen);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpLotto);
             this.Controls.Add(this.label23);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.btMainMenu);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
@@ -329,12 +339,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lotto - DTI Soft V.1.0";
             this.Load += new System.EventHandler(this.FrmLotto_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,27 +354,27 @@
 
         private System.Windows.Forms.Button btMainMenu;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel tslbUsername;
         private System.Windows.Forms.ToolStripLabel tslbDateTime;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.RadioButton rdClose;
+        private System.Windows.Forms.RadioButton rdOpen;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button btLotto2Bottom;
+        private System.Windows.Forms.Label lbLotto2Bottom;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label lbLotto3Bottom02;
+        private System.Windows.Forms.Button btLotto3Bottom;
+        private System.Windows.Forms.Label lbLotto3Bottom01;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label lbLotto3Top02;
+        private System.Windows.Forms.Button btLotto3Top;
+        private System.Windows.Forms.Label lbLotto3Top01;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btLotto1;
+        private System.Windows.Forms.Label lbLotto1;
+        private System.Windows.Forms.DateTimePicker dtpLotto;
+        private System.Windows.Forms.Label label23;
     }
 }
